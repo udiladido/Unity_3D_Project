@@ -1989,6 +1989,7 @@ GameObject:
   - component: {fileID: 8959295205320667852}
   - component: {fileID: 2897193713396555134}
   - component: {fileID: 6655398553870262050}
+  - component: {fileID: 1521483460566493892}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -2122,7 +2123,19 @@ MonoBehaviour:
     m_ActionId: 74ab6ed2-4f88-41dc-a9f7-25863d39ecae
     m_ActionName: Player/Attack[/Mouse/leftButton]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2897193713396555134}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: OnPovChangeButton
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: d2ee10bf-270a-4f8f-8fa0-ea449b85bbd4
     m_ActionName: Player/CameraChange[/Keyboard/q]
   - m_PersistentCalls:
@@ -2198,12 +2211,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   curMovementInput: {x: 0, y: 0}
-  jumpForce: 0
+  jumpForce: 5
   groundLayerMask:
     serializedVersion: 2
-    m_Bits: 0
-  FirstPersonCameraContainer: {fileID: 2910843945961904951}
-  ThirdPersoncameraContainer: {fileID: 2312169288235311329}
+    m_Bits: 4294967295
+  CameraContainer: {fileID: 6568812766849735808}
   minXLook: -85
   maxXLook: 85
   lookSensitivity: 0.1
@@ -2220,6 +2232,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 0}
+  condition: {fileID: 0}
+--- !u!114 &1521483460566493892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6538176924330704335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b3fd812212e7934b8cd163274edf78e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6762721915469260145
 GameObject:
   m_ObjectHideFlags: 0
@@ -2620,9 +2645,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 857a353d6e116da4cbd08f1596ad8b23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TirdPersonCamera: {fileID: 0}
-  FirstPersonCamera: {fileID: 0}
-  isActive: 1
+  TirdPersonCamera: {fileID: 8450362230777119624}
+  FirstPersonCamera: {fileID: 8605423242856377805}
+  pannel: {fileID: 0}
+  F_time: 0.1
 --- !u!1 &8305657710903864030
 GameObject:
   m_ObjectHideFlags: 0
