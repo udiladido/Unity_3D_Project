@@ -19,9 +19,20 @@ public class PlayerController : MonoBehaviour
     public float lookSensitivity = 0.1f;
 
 
-    private Vector2 mouseDelta;
+    [Header("Camera")]
+    public float maxZoom;
+    public float minZoom;
+    private float camCurZoom;
+    public float zoomSensitivity;
 
+    private Vector3 initialLocalPosition;
+    private Vector2 mouseDelta;
+    private Vector2 mouseScroll;
+    
+    
     private Rigidbody rigidbody;
+
+
 
     public Action PovChange;
 
@@ -47,6 +58,10 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    private void Start()
+    {
+        initialLocalPosition = CameraContainer.localPosition;
+    }
 
 
     public void OnMoveInput(InputAction.CallbackContext context)
@@ -85,6 +100,23 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void OnCameraZoom(InputAction.CallbackContext context)
+    {
+        if (context.phase == InputActionPhase.Started)
+        {
+
+            mouseScroll = context.ReadValue <Vector2>();
+
+            camCurZoom += mouseScroll.y * zoomSensitivity;
+            camCurZoom = Mathf.Clamp(camCurZoom, minZoom, maxZoom);
+
+
+            Vector3 targetPosition = initialLocalPosition + CameraContainer.forward * camCurZoom;
+
+            CameraContainer.localPosition = Vector3.MoveTowards(CameraContainer.localPosition, targetPosition, zoomSensitivity * Time.deltaTime);
+
+        }
+    }
 
 
     bool IsGrounded()
@@ -116,9 +148,9 @@ public class PlayerController : MonoBehaviour
     {
         camCurXRot += mouseDelta.y * lookSensitivity;
         camCurXRot = Mathf.Clamp(camCurXRot, minXLook, maxXLook);
-        CameraContainer.localEulerAngles = new Vector3(-camCurXRot, 0, 0);
-
+        CameraContainer.localEulerAngles = new Vector3(-camCurXRot, 0 , 0);
         transform.eulerAngles += new Vector3(0, mouseDelta.x * lookSensitivity, 0);
+
     }
 
 
