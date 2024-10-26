@@ -22,7 +22,7 @@ public class Condition : MonoBehaviour
     private void Update()
     {
         uiBar.fillAmount = GetPercentage();
-
+        ShowHP();
     }
 
     public void Add(float amount)
@@ -37,14 +37,14 @@ public class Condition : MonoBehaviour
 
     public float GetPercentage()
     {
-        return curValue / maxValue;
+        return 1 - curValue / maxValue;
     }
 
 
     public void ShowHP()
     {
 
-        CurrentHealth.text = curValue.ToString();
+        CurrentHealth.text = ((int)curValue).ToString();
 
 
     }
