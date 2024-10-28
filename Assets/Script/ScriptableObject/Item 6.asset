@@ -10,14 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 961a6ec0a9a5ea040a416b799e854fa1, type: 3}
-  m_Name: Item
+  m_Name: Item 6
   m_EditorClassIdentifier: 
-  displayName: "\uC5F4\uC1E0"
-  description: "\uB204\uAD70\uAC00 \uC783\uC5B4\uBC84\uB9B0 \uC5F4\uC1E0. "
-  type: 2
+  displayName: "\uB9C8\uBC95\uC758 \uC2E0\uBC1C"
+  description: "\uB9C8\uBC95\uC774 \uAE43\uB4E0 \uD2B9\uC774\uD55C \uC2E0\uBC1C\uC785\uB2C8\uB2E4.
+    \uC774\uB3D9\uC18D\uB3C4\uAC00 \uC7A0\uC2DC \uBE68\uB77C\uC9C0\uBA70 \uC911\uB825\uC744
+    \uC870\uC791\uD558\uB294 \uB9C8\uBC95\uC774 \uAE43\uB4E4\uC5B4 \uC788\uC2B5\uB2C8\uB2E4."
+  type: 0
   icon: {fileID: 0}
-  dropPrefab: {fileID: 1288178352909144603, guid: 74e95c8d2878ec04ea0b6caaf1995a25,
-    type: 3}
+  dropPrefab: {fileID: 0}
   canStack: 0
   maxStackAmount: 0
   equipPrefab: {fileID: 0}
