@@ -2033,6 +2033,7 @@ GameObject:
   - component: {fileID: 6655398553870262050}
   - component: {fileID: 9031316093829925624}
   - component: {fileID: 2310795808156972066}
+  - component: {fileID: 444365037447195134}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -2158,7 +2159,19 @@ MonoBehaviour:
     m_ActionId: a1f9bfa0-acc5-4d09-8746-5ed1ceba4e0a
     m_ActionName: Player/Inventory[/Keyboard/i]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2310795808156972066}
+        m_TargetAssemblyTypeName: Interaction, Assembly-CSharp
+        m_MethodName: OnInteractInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: e2341cce-7d23-46f9-962e-a77fc1941d91
     m_ActionName: Player/Interaction[/Keyboard/e]
   - m_PersistentCalls:
@@ -2324,6 +2337,18 @@ MonoBehaviour:
     m_Bits: 64
   curInteractGameObject: {fileID: 0}
   promptText: {fileID: 0}
+--- !u!114 &444365037447195134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6538176924330704335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db0dc6182bafa9d4fbdbd0f557c8df6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6762721915469260145
 GameObject:
   m_ObjectHideFlags: 0
@@ -2810,7 +2835,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6845643128599301723
 Transform:
   m_ObjectHideFlags: 0
@@ -2947,7 +2972,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &840544679502085897
 Transform:
   m_ObjectHideFlags: 0

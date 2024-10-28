@@ -8,9 +8,10 @@ public class SwitchCamera : MonoBehaviour
     public GameObject TirdPersonCamera;
     public GameObject FirstPersonCamera;
     public Image pannel;
-
     private PlayerController controller;
 
+
+    private Camera camera;
 
     float time = 0f;
     public float F_time = 1f;
@@ -42,6 +43,7 @@ public class SwitchCamera : MonoBehaviour
 
         }
 
+        camera = Camera.main; 
 
     }
 
