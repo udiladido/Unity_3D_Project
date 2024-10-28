@@ -8,7 +8,6 @@ public class MovingPlatform : MonoBehaviour
 
     public GameObject Player;
 
-
     private void Start()
     {
         Player = CharacterManager.Instance.Player.gameObject; 
