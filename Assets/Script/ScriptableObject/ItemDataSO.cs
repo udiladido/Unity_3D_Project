@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using UnityEngine;
 
 public enum ItemType
@@ -14,6 +15,14 @@ public enum ConsumableType
 
 }
 
+public enum Equiparts
+{ 
+    Body,
+    Head,
+    Shoe,
+    Weapon
+
+}
 
 
 [System.Serializable]
@@ -23,6 +32,15 @@ public class ItemDataConsumable
     public float value;
 }
 
+public class ItemDataEquipStat
+{
+    public Equiparts part;
+    public float attackPow;
+    public float attackSpeed;
+    public float AmorDefense;
+    public float additionSpeed;
+
+}
 
 [CreateAssetMenu(fileName = "Item", menuName ="New Item")]
 public class ItemDataSO : ScriptableObject
@@ -39,6 +57,8 @@ public class ItemDataSO : ScriptableObject
     public bool canStack;
     public int maxStackAmount;
 
+    [Header("Consumable")]
+    public ItemDataConsumable[] consumables;
 
     [Header("Equip")]
     public GameObject equipPrefab;
