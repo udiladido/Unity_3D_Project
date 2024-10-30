@@ -51,7 +51,7 @@ W, A, S, D 이동
 
 **3인칭 시점 구현**
 
-카메라를 추가해 활성화/비활성화 시키는 방식
+카메라를 추가해 활성화/비활성화 시키는 방식.<br>
 https://youtu.be/_yR9FL4LXGE?si=U4KMy4UHsZiVwOyg
 
 
@@ -65,28 +65,28 @@ https://youtu.be/rO19dA2jksk?si=M3xOVhlV7FUYRnG4
 **카메라 줌 기능**
 
 **투명화 아이템 추가** 
-: 쉐이더 그래프 활용 시도
+쉐이더 그래프 활용 시도.<br>
 https://youtu.be/1fQzBYepKrY?si=mCIrkuXUPwGwAw9d
 
 
 ### 추가 기능 구현 시도하면서 참고했던 자료
 
-**캐릭터 장비 바꾸기**
+**캐릭터 장비 바꾸기**.<br>
 https://youtu.be/yK0ojJSoHds?si=UnB1Wz1n5tswoWb-
 
-**네비 매쉬 기능**
+**네비 매쉬 기능**.<br>
 https://youtu.be/A0nsAjsJqHg?si=H7MKRO5swbgUgo9z
 
-**벽타기(원형 겯기)**
+**벽타기(원형 겯기)**.<br>
 https://youtu.be/M7MRg0YvdSs?si=sdoVrbnd_BcHxwnY
 
-**상호작용 가능 오브젝트**
+**상호작용 가능 오브젝트**.<br>
 https://youtu.be/THmW4YolDok?si=oDYjNOAGUnW4CNLH
 
 ### 그 외 
 
-**Static Batching 적용**
-배경 오브젝트들에 Static Batching 적용 시도 
+**Static Batching 적용**.<br>
+배경 오브젝트들에 Static Batching 적용 시도 .<br>
 https://rootdev.tistory.com/51
 
 -----
@@ -108,28 +108,28 @@ https://rootdev.tistory.com/51
 
 **유니티 에셋 스토어 내 무료 에셋 사용**
 
-Translucent Crystals
+Translucent Crystals.<br>
 https://assetstore.unity.com/packages/3d/environments/fantasy/translucent-crystals-106274
 
-POLY STYLE - Platformer Starter Pack
+POLY STYLE - Platformer Starter Pack.<br>
 https://assetstore.unity.com/packages/3d/environments/poly-style-platformer-starter-pack-284167
 
-Starter Assets - ThirdPerson | Updates in new CharacterController package : 캐릭터만 사용
+Starter Assets - ThirdPerson | Updates in new CharacterController package : 캐릭터만 사용.<br>
 https://assetstore.unity.com/packages/essentials/starter-assets-thirdperson-updates-in-new-charactercontroller-pa-196526
 
-Treasure Set - Free Chest
+Treasure Set - Free Chest.<br>
 https://assetstore.unity.com/packages/3d/props/interior/treasure-set-free-chest-72345
 
-Food Props
+Food Props.<br>
 https://assetstore.unity.com/packages/3d/food-props-163295
 
-Surveillance Camera
+Surveillance Camera.<br>
 https://assetstore.unity.com/packages/3d/props/surveillance-camera-264577
 
 **기타** 
-Meshy 사이트에서 생성해 사용 - AI 3D 모델 생성 사이트, 무료
+Meshy 사이트에서 생성해 사용 - AI 3D 모델 생성 사이트, 무료.<br>
 https://www.meshy.ai/discover
 
-ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+-----
 블로그 주소 : 
 
