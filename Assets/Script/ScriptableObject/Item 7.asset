@@ -12,13 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 961a6ec0a9a5ea040a416b799e854fa1, type: 3}
   m_Name: Item 7
   m_EditorClassIdentifier: 
-  displayName: "\uD22C\uBA85"
-  description: "\uB9C8\uBC95\uC774 \uAE43\uB4E0 \uD2B9\uC774\uD55C \uC2E0\uBC1C\uC785\uB2C8\uB2E4.
-    \uC774\uB3D9\uC18D\uB3C4\uAC00 \uC7A0\uC2DC \uBE68\uB77C\uC9C0\uBA70 \uC911\uB825\uC744
-    \uC870\uC791\uD558\uB294 \uB9C8\uBC95\uC774 \uAE43\uB4E4\uC5B4 \uC788\uC2B5\uB2C8\uB2E4."
-  type: 0
-  icon: {fileID: 0}
-  dropPrefab: {fileID: 0}
-  canStack: 0
-  maxStackAmount: 0
+  displayName: "\uD22C\uBA85\uC758 \uB3CC"
+  description: "\uB9C8\uBC95\uC774 \uAE43\uB4E0 \uB3CC\uC785\uB2C8\uB2E4. \uB9CC\uC9C0\uBA74
+    \uC7A0\uC2DC \uB3D9\uC548 \uD22C\uBA85\uD574\uC9C0\uB294 \uD6A8\uACFC\uB97C \uC90D\uB2C8\uB2E4.."
+  type: 2
+  icon: {fileID: -1633290101, guid: 3d1534591a8eda34aabf5a91e40c82ad, type: 3}
+  dropPrefab: {fileID: 7061162916362134686, guid: ea5be6cb0d908f94ca10504330c2b359,
+    type: 3}
+  canStack: 1
+  maxStackAmount: 12
+  consumables:
+  - type: 2
+    value: 10
   equipPrefab: {fileID: 0}
