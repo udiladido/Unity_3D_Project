@@ -11,6 +11,9 @@ public class Player : MonoBehaviour
     public ItemDataSO itemData;
     public Action addItem;
 
+    public Transform dropPosition;
+    public Equipment equip;
+
     private void Awake()
     {
 

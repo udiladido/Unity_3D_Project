@@ -33,8 +33,8 @@ public class PlayerController : MonoBehaviour
     private Rigidbody rigidbody;
 
 
-
     public Action PovChange;
+    public Action inventory;
 
 
     private void Awake()
@@ -115,6 +115,14 @@ public class PlayerController : MonoBehaviour
 
             CameraContainer.localPosition = Vector3.MoveTowards(CameraContainer.localPosition, targetPosition, zoomSensitivity * Time.deltaTime);
 
+        }
+    }
+
+    public void OnInventoryButton(InputAction.CallbackContext callbackContext)
+    {
+        if (callbackContext.phase == InputActionPhase.Started)
+        {
+            inventory?.Invoke();
         }
     }
 
